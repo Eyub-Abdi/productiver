@@ -1,0 +1,10 @@
+@import '../../sass/variables';
+
+.main-header {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  // background-color: $colorPrimary;
+  align-self: start;
+  height: 7rem;
+  box-shadow: $shadowLightSamll;
+}
