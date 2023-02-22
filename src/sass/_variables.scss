@@ -1,12 +1,20 @@
+// UNUSED
+// $colorDarkGrey: #101010;
+
 // COLORS
 $colorPrimary: #2ed573;
 $colorPrimaryLight: #43d981;
 $colorPrimaryDark: #29c068;
-// $colorDarkGrey: #101010;
-$colorDarkGrey: #333;
-$colorDarkGreyLight: #ebebeb;
+$colorGrey: #333;
+$colorGreyLight: #f5f6f8;
+$colorGreyDard: #ebebeb;
 $colorWhite: #fff;
 $colorBlack: #000;
+
+// ALERTS COLORS
+$alertSuccess: rgba(0, 128, 0, 0.24);
+$alertDanger: #f4d4d4;
+$alertWarning: #f9c566;
 
 // FONST SIZES
 $defaultFontSize: 1.6rem;
@@ -20,3 +28,6 @@ $thin: 300;
 // SHADOWS
 $shadowLightSamll: 0 0.2rem 3.5rem rgba($colorBlack, 0.08);
 $shadowLightSamll: 0 0 0.9rem rgba($colorBlack, 0.2);
+
+// INDEXES
+$xx-large: 999;

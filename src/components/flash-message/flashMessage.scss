@@ -1,46 +1,23 @@
 @import '../../sass/variables';
-@import '../../sass/animations';
-
-// .flash-message {
-//   &__view {
-//     background-color: rgba(0, 128, 0, 0.24);
-//     background-color: rgba($colorPrimary, 0.24);
-//     transition: all 2s;
-//     border-radius: 3px;
-//     position: absolute;
-//     top: 4rem;
-//     right: -50rem;
-//     transform: translate(-50%, -50%);
-//   }
-//   &__content {
-//     font-size: 1.6rem;
-//     color: $colorDarkGrey;
-//     padding: 1rem;
-//     border-radius: 8px;
-//   }
-//   animation: moveInFromTop 0.2s 0.2s;
-//   display: none;
-//   visibility: hidden;
-// }
 
 .floating-alert {
   display: none;
   position: absolute;
-  z-index: 999;
-  // top: 3.8rem;
+  z-index: $xx-large;
   top: 1.5rem;
   left: 60%;
+  transition: all 0.2s ease-in;
   transform: translateX(-50%);
-  -moz-animation: floatingAlert ease-in 5s forwards;
-  -webkit-animation: floatingAlert ease-in 5s forwards;
-  -o-animation: floatingAlert ease-in 5s forwards;
-  animation: floatingAlert ease-in 5s forwards;
+  -moz-animation: floatingAlert cubic-bezier(0.17, 0.67, 0, 1.78) 5s forwards;
+  -webkit-animation: floatingAlert cubic-bezier(0.17, 0.67, 0, 1.78) 5s forwards;
+  -o-animation: floatingAlert cubic-bezier(0.17, 0.67, 0, 1.78) 5s forwards;
+  animation: floatingAlert cubic-bezier(0.17, 0.67, 0, 1.78) 5s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  backface-visibility: hidden;
 }
 
 .floating-alerts .floating-alert:last-of-type {
   display: block;
   padding: 1.5rem 3rem;
-  background-color: rgba(0, 128, 0, 0.24);
 }

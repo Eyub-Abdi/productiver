@@ -1,0 +1,11 @@
+@import './variables';
+
+.alert-success {
+  background-color: $alertSuccess !important;
+}
+.alert-warning {
+  background-color: $alertWarning !important;
+}
+.alert-danger {
+  background-color: $alertDanger !important;
+}
