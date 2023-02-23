@@ -2,6 +2,7 @@
 @import './sass/animations';
 @import './sass/utilities.scss';
 @import './sass/mixins.scss';
+@import './sass/layouts.scss';
 
 *,
 *::before,
@@ -28,7 +29,6 @@ body {
 .badge-notification {
   background-color: red;
   color: $colorWhite;
-  // font-weight: $thin;
   height: 2rem;
   width: 2rem;
   padding: 0.1rem;
