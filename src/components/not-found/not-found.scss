@@ -1,0 +1,22 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.not-found {
+  max-width: 100%;
+  @include flexboxCentering;
+  margin-top: 12rem;
+  color: $colorGreyDark-1;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    height: 34rem;
+  }
+
+  &__span {
+    display: block;
+  }
+}
