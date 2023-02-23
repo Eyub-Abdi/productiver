@@ -1,0 +1,7 @@
+@import './variables';
+
+@mixin flexboxCentering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

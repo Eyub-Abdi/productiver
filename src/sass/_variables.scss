@@ -6,8 +6,9 @@ $colorPrimary: #2ed573;
 $colorPrimaryLight: #43d981;
 $colorPrimaryDark: #29c068;
 $colorGrey: #333;
-$colorGreyLight: #f5f6f8;
-$colorGreyDard: #ebebeb;
+$colorGreyDark-1: #aaa;
+$colorGreyDark-2: #ebebeb;
+$colorGreyLight-1: #f5f6f8;
 $colorWhite: #fff;
 $colorBlack: #000;
 
@@ -18,11 +19,13 @@ $alertWarning: #f9c566;
 
 // FONST SIZES
 $defaultFontSize: 1.6rem;
+$x-default: 1.7rem;
 
 //FONT WEIGHTS
 $default: 400;
-$bold: 500;
-$x-bold: 600;
+$semi-bold: 500;
+$bold: 600;
+$x-bold: 700;
 $thin: 300;
 
 // SHADOWS

@@ -16,10 +16,23 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Manrope', sans-serif;
   box-sizing: inherit;
+  line-height: 1.6;
+  color: $colorGrey;
   font-size: $defaultFontSize;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+// NOTIFICATION COUNTER
+.badge-notification {
+  background-color: red;
+  color: $colorWhite;
+  // font-weight: $thin;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.1rem;
+  font-size: $defaultFontSize;
+  @include flexboxCentering;
+  border-radius: 50%;
 }

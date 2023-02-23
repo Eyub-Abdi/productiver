@@ -1,0 +1,29 @@
+@import '../../sass/variables';
+
+.search-box {
+  width: 30%;
+  height: 4rem;
+}
+
+.search-input {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  border: none;
+  width: 50%;
+  display: inline-block;
+  background-color: $colorGreyDark-2;
+  border-radius: 3px;
+  font-family: inherit;
+  color: inherit;
+  transition: all 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  width: 100%;
+}
+
+.search-input::placeholder {
+  color: $colorGreyDark-1;
+  font-family: inherit;
+}
