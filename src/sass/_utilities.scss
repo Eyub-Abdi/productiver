@@ -13,3 +13,11 @@
 .u-margin-bottom--medium {
   margin-bottom: $space-medium !important;
 }
+
+.u-flex-d-column {
+  flex-direction: column !important;
+}
+
+.u-gap-medium {
+  gap: $space-mini-medium !important;
+}

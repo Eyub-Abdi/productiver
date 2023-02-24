@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 // ICONS
 import { ImHome3 } from 'react-icons/im'
 import { ImMap2 } from 'react-icons/im'
@@ -13,10 +13,11 @@ import { ImExit } from 'react-icons/im'
 import './navigation.scss'
 
 function Navigation() {
+  const navigate = useNavigate()
   const handleLogout = e => {
     e.preventDefault()
     console.log('Loggeld out...')
-    alert('Logged out')
+    navigate('/')
   }
   return (
     <nav className="main-nav">

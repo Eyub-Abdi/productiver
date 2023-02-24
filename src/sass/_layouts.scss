@@ -1,5 +1,16 @@
 @import './variables';
 
+// PRIMARY HEADING
+.heading-primary {
+  display: inline-block;
+  font-size: $fs-large;
+  font-weight: $x-bold;
+  background-image: linear-gradient(to right, $colorPrimary, $colorGrey);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // SECONDARY HEADING
 .heading-secondary {
   font-size: $medium;
@@ -19,7 +30,7 @@
 
 // INPUTS
 .input {
-  padding: 1rem 2rem;
+  padding: 1rem 1.2rem;
   display: inline-block;
   width: 95%;
   font-size: $xx-default;
@@ -36,7 +47,16 @@
     width: 100%;
   }
 }
-
+// REGISTRATION FORM INPUTS
+.register--input {
+  border-bottom: solid 4px transparent;
+  transition: all 0.2s;
+  &:focus {
+    width: 95%;
+    border-bottom: solid 4px $alertWarning;
+  }
+  padding: 1.2rem;
+}
 // BUTTON
 .btn {
   display: inline-block;
@@ -45,7 +65,7 @@
   cursor: pointer;
   font-family: inherit;
   border-radius: $br-small;
-  font-size: $defaultFontSize;
+  font-size: $xx-default;
   background-color: currentColor;
   color: currentColor;
   opacity: 0.9;
@@ -64,7 +84,10 @@
     color: $colorWhite;
     &:hover {
       background-color: $colorPrimaryDark;
-      // color: $colorGrey;
     }
+  }
+
+  &--register {
+    align-self: stretch;
   }
 }
