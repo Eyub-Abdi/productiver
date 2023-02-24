@@ -1,0 +1,11 @@
+@import '../../sass/variables';
+
+.form-box {
+  width: 50%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: $space-small;
+}

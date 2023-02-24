@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './landing.scss'
 // COMPONENTS
-import Header from '../header/Header'
+import HeaderLoggedIn from '../header-logged-in/HeaderLoggedIn'
 import Navigation from '../navigation/Navigation'
 import Home from '../home/Home'
 import Epic from '../epic/Epic'
@@ -16,7 +16,7 @@ import NotFound from '../not-found/NotFound'
 function Landing() {
   return (
     <div className="landing">
-      <Header />
+      <HeaderLoggedIn />
       <Navigation />
       <main className="main">
         <Routes>

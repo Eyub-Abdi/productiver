@@ -9,3 +9,62 @@
 .paragraph {
   font-size: $xx-default;
 }
+
+// HEADER
+.header {
+  height: 7.5rem;
+  padding: 0 1rem;
+  box-shadow: $shadowLightSamll;
+}
+
+// INPUTS
+.input {
+  padding: 1rem 2rem;
+  display: inline-block;
+  width: 95%;
+  font-size: $xx-default;
+  font-family: inherit;
+  border-radius: $br-small;
+  color: $colorGreyLight-1;
+  border: none;
+  background-color: $colorGrey;
+  opacity: 0.9;
+  transition: all 0.2s;
+
+  &:focus {
+    outline: none;
+    width: 100%;
+  }
+}
+
+// BUTTON
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: $br-small;
+  font-size: $defaultFontSize;
+  background-color: currentColor;
+  color: currentColor;
+  opacity: 0.9;
+  transition: all 0.2s;
+
+  &--small {
+    padding: 1rem 1.2rem;
+  }
+
+  &--dark {
+    background-color: $colorGrey;
+    color: $colorGreyLight-1;
+  }
+  &--green {
+    background-color: $colorPrimary;
+    color: $colorWhite;
+    &:hover {
+      background-color: $colorPrimaryDark;
+      // color: $colorGrey;
+    }
+  }
+}

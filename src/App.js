@@ -4,7 +4,7 @@ import './App.scss'
 import FlashMessage from './components/flash-message/FlashMessage'
 // COMPONENTS
 import Landing from './components/landing/Landing'
-import Login from './components/login/Login'
+import HomeGuest from './components/home-guest/HomeGuest'
 import NotFound from './components/not-found/NotFound'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <FlashMessage />
       <Routes>
         <Route path="/landing/*" element={<Landing />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<HomeGuest />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
