@@ -18,9 +18,8 @@ function App() {
     name: 'niite mimi',
     isLoggedIn: true,
     flashMessages: [],
-    user: {
-      username: 'Helen',
-      token: '123456789890'
+    inputErrors: {
+      message: []
     }
   }
 
@@ -28,6 +27,9 @@ function App() {
     switch (action.type) {
       case 'FlashMessage':
         draft.flashMessages.push(action.value)
+        return
+      case 'InputError':
+        draft.inputErrors.message.push(action.value)
         return
     }
   }

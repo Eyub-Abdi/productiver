@@ -1,0 +1,20 @@
+@import '../../sass/variables';
+@import '../../sass/animations';
+
+.input-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  top: 11rem;
+  opacity: 0;
+  transition: all 0.2s;
+  position: fixed;
+  animation: fadesInAndOut 5s ease-in-out 0.1s forwards;
+
+  &__icon {
+    fill: $colorTertiary;
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+}

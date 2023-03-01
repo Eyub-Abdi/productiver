@@ -49,3 +49,29 @@
     transform: translateX(-50%) scale(1.2);
   }
 }
+// INPUT ERROR ANIMATIONS
+@keyframes fadesInAndOut {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+  }
+  9% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-100%);
+  }
+  91% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-100%);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+  }
+}

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import './flashMessage.scss'
 
 function FlashMessage({ messages }) {
-  console.log(`MESSAGES FROM FLASH MESSAGE`, messages)
   return (
     <div className="floating-alerts">
       {messages.map((msg, index) => {
