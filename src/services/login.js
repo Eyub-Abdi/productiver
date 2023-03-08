@@ -1,10 +1,11 @@
 import axios from 'axios'
 
-export async function login(user) {
+export async function login() {
   try {
-    return console.log(user)
-    // return await axios.post('/api/login', { username: user.username, password: user.password })
+    // return console.log(user)
+    // const { data } = await axios.get('http://localhost:5000/api/tours')
+    // console.log(data)
   } catch (error) {
-    console.log(error)
+    // console.log(error)
   }
 }

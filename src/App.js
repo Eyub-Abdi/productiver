@@ -12,6 +12,7 @@ import NotFound from './components/not-found/NotFound'
 // CONTEXTS
 import StateContext from './components/contexts/StateContext'
 import DispatchContex from './components/contexts/DispatchContext'
+import { login } from './services/login'
 
 function App() {
   const initialState = {
