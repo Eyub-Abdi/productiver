@@ -51,8 +51,9 @@
 .register--input {
   border-bottom: solid 4px transparent;
   transition: all 0.2s;
+  width: 100%;
   &:focus {
-    width: 95%;
+    width: 100%;
     border-bottom: solid 4px $alertWarning;
   }
   padding: 1.2rem;
@@ -90,4 +91,33 @@
   &--register {
     align-self: stretch;
   }
+}
+
+// LINK BUTTONS
+.text-btn {
+  &:link,
+  &:visited {
+    display: flex;
+    align-items: center;
+    gap: $space-small;
+    text-decoration: none;
+    background-color: $colorGrey;
+    opacity: 0.9;
+    padding: 1rem;
+    width: 100%;
+    font-family: inherit;
+    color: $colorGreyLight-1;
+    border-radius: $br-small;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.btn--add-list:hover span {
+  transition: all 0.2s;
+  margin-right: 0.7rem;
 }

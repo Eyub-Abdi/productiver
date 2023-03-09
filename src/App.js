@@ -21,7 +21,8 @@ function App() {
     flashMessages: [],
     inputErrors: {
       message: []
-    }
+    },
+    scrum: { createList: false }
   }
 
   function reducer(draft, action) {
@@ -32,9 +33,16 @@ function App() {
       case 'InputError':
         draft.inputErrors.message.push(action.value)
         return
+
+      case 'createList':
+        draft.scrum.createList = !draft.scrum.createList
+        return
     }
   }
+
   const [state, dispatch] = useImmerReducer(reducer, initialState)
+
+  useEffect(() => {}, [state.scrum.createList])
 
   return (
     <StateContext.Provider value={state}>

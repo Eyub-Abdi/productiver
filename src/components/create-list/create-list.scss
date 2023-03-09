@@ -1,0 +1,29 @@
+@import '../../sass/variables';
+
+.list-creator {
+  padding: 0.8rem;
+  background-color: $colorGreyDark-2;
+  display: flex;
+  width: 20%;
+  gap: 0.5rem;
+  border-radius: $br-small;
+  transition: all 0.4s;
+  box-shadow: 0 0.3rem 0.4rem rgba($colorBlack, 0.3);
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__icon {
+    font-size: $medium;
+    line-height: 1;
+    stroke: $colorGreyDark-1;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.4);
+      cursor: pointer;
+    }
+  }
+}

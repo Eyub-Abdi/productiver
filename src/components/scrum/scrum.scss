@@ -1,0 +1,31 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.scrum-view {
+  // background-color: $colorPrimary;
+  display: grid;
+  grid-template-columns: 25rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 30rem;
+  gap: 3rem;
+  overflow-x: scroll;
+  height: 100%;
+  align-content: start;
+  @include styleScrollBar($sb-medium);
+}
+
+.input--list {
+  width: 100%;
+  opacity: 0.7;
+  padding: 0.5rem 1.2rem;
+  font-size: $defaultFontSize;
+  color: $colorGrey;
+  background-color: $colorWhite;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+
+  &:focus {
+    width: 100%;
+    border: 2px solid $colorBlue;
+  }
+}
